@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+        /*
+ * Before code
+*/
+$.getJSON('https://api.twitter.com/1/statuses/user_timeline.json?screen_name=MikeRogers0&count=2', function(d){
+// Some magic here
+});
+ 
+/*
+ * Change to 
+*/
+$.getJSON('tweet.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=Monee_bagg_boyz&count=2'), function(d){
+// Some magic here
+});
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+</html>
